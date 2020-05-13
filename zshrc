@@ -1,8 +1,8 @@
 # antigen
-source "~/.antigen.zsh"
+source "$HOME/.antigen.zsh"
 
 # fzf
-export FZF_BASE=~/.fzf
+export FZF_BASE=$HOME/.fzf
 
 # Load the oh-my-zsh's library.
 antigen use oh-my-zsh

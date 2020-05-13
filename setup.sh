@@ -1,9 +1,6 @@
-#!/bin/bash
+#!/bin/sh
 
 SCRIPT_DIR="$(dirname "$(realpath "$0")")"
-
-# zsh
-sudo apt-get install -y zsh
 
 # antigen
 if [[ ! -f ~/.antigen.zsh ]]; then
@@ -11,7 +8,7 @@ if [[ ! -f ~/.antigen.zsh ]]; then
 fi
 
 # fzf
-if [[ ! -f ~/.fzf ]]; then
+if [[ ! -d ~/.fzf ]]; then
   git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
   ~/.fzf/install --completion --key-bindings --no-update-rc
 fi
@@ -20,5 +17,5 @@ fi
 if [[ -f ~/.zshrc ]]; then
   mv ~/.zshrc ~/.zshrc.old
 fi
-cp "${SCRIPT_DIR}/zshrc" ~
+cp "${SCRIPT_DIR}/zshrc" ~/.zshrc
 
