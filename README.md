@@ -2,6 +2,8 @@
 
 A beautiful zsh prompt with tons of useful features.
 
+![screenshot][screenshot.png]
+
 Includes:
 * antigen
 * powerlevel10k
