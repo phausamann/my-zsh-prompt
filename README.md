@@ -2,7 +2,7 @@
 
 A beautiful zsh prompt with tons of useful features.
 
-![screenshot][screenshot.png]
+![screenshot](screenshot.png)
 
 Includes:
 * antigen
