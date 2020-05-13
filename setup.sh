@@ -4,7 +4,14 @@ SCRIPT_DIR="$(dirname "$(realpath "$0")")"
 
 # antigen
 if [[ ! -f ~/.antigen.zsh ]]; then
-  wget -q -O ~/.antigen.zsh git.io/antigen
+  if [ -x "$(command -v wget)" ]; then
+    wget -q -O ~/.antigen.zsh git.io/antigen
+  elif [ -x "$(command -v curl)" ]; then
+    curl -L git.io/antigen > ~/.antigen.zsh
+  else
+    echo "Could not install antigen. Install wget or curl first"
+    exit 1
+  fi
 fi
 
 # fzf
