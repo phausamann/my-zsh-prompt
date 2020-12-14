@@ -5,11 +5,11 @@ A beautiful zsh prompt with tons of useful features.
 ![screenshot](screenshot.png)
 
 Includes:
-* antigen
-* powerlevel10k
-* fzf
-* autosuggestions
-* syntax highlighting
+* Plugin management with [antigen](https://github.com/zsh-users/antigen)
+* Theme by [powerlevel10k](https://github.com/romkatv/powerlevel10k)
+* Fuzzy path completion and history search with [fzf](https://github.com/junegunn/fzf)
+* Automatic command suggestions via [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions)
+* Syntax highlighting via [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting)
 * and more
 
 ## Installation
@@ -22,6 +22,8 @@ Clone the repository and run the setup script:
 
     $ git clone https://github.com/phausamann/my-zsh-prompt
     $ zsh my-zsh-prompt/setup.sh
+    
+For the status bar theme to display properly, you might need to install a font such as [FiraCode](https://github.com/tonsky/FiraCode).
 
 ## Usage
 
